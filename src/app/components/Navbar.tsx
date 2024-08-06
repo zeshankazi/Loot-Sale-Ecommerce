@@ -23,7 +23,7 @@ const navBarList = [
       link: "/profile",
     },
     {
-      title: "Studio",
+      title: "Studios",
       link: "/studio",
     },
   ];
