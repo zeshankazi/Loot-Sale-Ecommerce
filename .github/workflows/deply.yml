@@ -27,8 +27,7 @@ jobs:
     steps:
       - name: Pull image from Docker Hub
         run: docker pull zkzkrgn/next-js-ec2:latest
-
       - name: Delete old container
-        run:  docker rm -rf nextjsAppContainer
+        run:  docker rm -f nextjsAppContainer
       - name: Run Docker Container
         run: docker run -d -p 3000:3000 --name nextjsAppContainer zkzkrgn/next-js-ec2
