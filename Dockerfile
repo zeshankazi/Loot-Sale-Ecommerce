@@ -2,7 +2,8 @@ FROM node:20-alpine3.18 as builder
 
 WORKDIR /src
 COPY package.json ./
-RUN npm install  --production
+# Install dependencies.
+RUN npm install
 COPY  . .
 RUN npm run build
 
