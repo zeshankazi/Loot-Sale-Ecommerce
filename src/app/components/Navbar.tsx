@@ -26,6 +26,10 @@ const navBarList = [
       title: "Studios",
       link: "/studio",
     },
+    {
+      title: "TiamursPage",
+      link: "/studio",
+    },
   ];
 
 const Navbar = () =>{
